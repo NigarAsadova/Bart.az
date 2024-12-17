@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bart.az</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- Top Header Part / Navbar -->
+             <nav>
+                <div class="py-[17px] bg-[#F1F3FA]">
+                    <div class="max-w-custom-container mx-auto flex justify-between items-center"> 
+                        <!-- Left Nav -->
+                        <div>
+                            <ul class="font-[500] text-[15px] leading-[22px] text-[#364152] tracking-[3%] flex gap-6">
+                                <li ><a href="#">Barter</a></li>
+                                <li><a href="#">Satılır</a></li>
+                                <li><a href="#">İcarə</a></li>
+                                <li><a href="#">Ehtiyacı olanlar üçün</a></li>
+                            </ul>
+                        </div>
+                        <!-- Right Nav -->
+                        <div>
+                            <ul class="flex gap-5">
+                                <li class="font-semibold text-[15px] leading-[22px] text-[#364152] tracking-[3%]">
+                                    <a href="#">
+                                        <div class="flex gap-[6px] items-center">
+                                            <div><img src="/assets/icons/market-icon.svg" alt="market icon"></div>
+                                            <span>Mağaza aç</span>
+                                        </div>                                        
+                                    </a>
+                                </li>
+                                <li class="font-semibold text-[15px] leading-[22px] text-[#364152] tracking-[3%]">
+                                    <a href="#">
+                                        <div class="flex gap-[6px] items-center">
+                                            <div><img src="/assets/icons/profile-icon.svg" alt="profile icon"></div>
+                                            <span>Giriş və qeydiyyat</span>
+                                        </div>                                        
+                                    </a>
+                                </li>
+                                <li class="font-semibold text-[15px] leading-[22px] text-[#364152] tracking-[3%]">
+                                    <form action="" class="w-fit relative">
+                                        <select class="bg-[#E3E8EF] pl-2  py-1 pr-5 rounded-md appearance-none">
+                                            <option value="AZ">AZ</option>
+                                            <option value="EN">EN</option>          
+                                        </select>
+                                        <div class="absolute right-1 top-1/2 -translate-y-1 transform max-w-5 max-h-5"><img src="/assets/icons/arrow-to-bottom.svg" alt="arrow to bottom"></div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </nav>
+            <!-- The other part of header with main logo, search and categories -->
+            <div>
+                <div class="max-w-custom-container mx-auto pt-6 pb-8 flex items-center gap-6">
+                    <!-- Main Logo -->
+                     <a href="#">
+                        <div class="max-w-[144px] max-h-[36px]">
+                            <img src="/assets/icons/main-logo.svg" alt="main-logo" class="size-full">
+                        </div>                        
+                     </a>
+                    <!-- Categories, Search, Adding new adv... -->
+                    <div class="flex gap-3 items-center">
+                        <!-- Categories button -->
+                        <button type="button" class="bg-primary-blue flex gap-2 rounded-xl py-3 px-5 h-[48px] items-center">
+                            <div><img src="/assets/icons/category-icon.svg" alt="category icon"></div>
+                            <span class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] text-center text-white">Kateqoriyalar</span>                      
+                        </button>
+                        <!-- Searching bar -->
+                        <div>
+                            <form action="" class="bg-[#155EEF] rounded-xl max-h-[48px] flex">
+                                <input type="text" class="rounded-[10px] py-[14px] pr-3 pl-4 placeholder-[#697586] text-[15px] leading-[22px] tracking-[-0.03rem] font-[500] border-2 border-[#155EEF] w-[524px] max-h-[48px]" placeholder="Elanlar üzrə axtarış" >
+                                <button class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] text-center text-white px-5">Axtar</button>
+                            </form>
+                        </div>
+                        <!-- Adding new advertisement -->
+                        <div class="bg-[#079455] rounded-xl min-w-[172px] flex justify-center items-center h-[48px]">
+                            <a href="#">
+                                <div class="flex items-center gap-2 py-3 pr-4 pl-5 ">
+                                    <span class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] text-center text-white">Yeni elan</span>
+                                    <div class="w-5 h-5 flex items-center"><img src="/assets/icons/plus-icon.svg" alt="plus icon"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+        <!-- Categories -->
+            <section>
+                <div class="max-w-custom-container mx-auto">
+                    <div class="flex flex-wrap gap-3 pt-3">
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 min-w-36">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Nəqliyyat</h5>
+                                <div class="flex justify-end">
+                                    <div class="w-auto">
+                                        <img src="/assets/imgs/transportation.png" alt="transportation img">
+                                    </div>                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[172px] overflow-hidden flex">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Daşınmaz
+                                    əmlak</h5>
+                                <div class="w-full">
+                                <img src="/assets/imgs/emlak.png" alt="emlak" class="size-full object-cover object-top">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[166px] overflow-hidden">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Elektronika</h5>
+                                <div class="w-full -translate-y-8 translate-x-6 transform">
+                                <img src="/assets/imgs/elektronika.png" alt="electronics" class="size-full object-cover object-top">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28  w-[152px]  overflow-hidden">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Xidmətlər və
+                                    biznes</h5>
+                                <div class="size-full -translate-y-7">
+                                <img src="/assets/imgs/services.png" alt="services" class="size-full object-cover object-right-top translate-x-3">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[204px] overflow-hidden flex">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Ehtiyat hissələri
+                                    və aksesuarlar</h5>
+                                <div class="size-full">
+                                <img src="/assets/imgs/accessories.png" alt="accessories" class="size-full object-contain ">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[166px] overflow-hidden flex">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Şəxsi əşyalar</h5>
+                                <div class="size-full">
+                                <img src="/assets/imgs/private-items.png" alt="private-items" class="size-full object-contain ">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28  overflow-hidden">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Uşaq aləmi</h5>
+                                <div class="size-full">
+                                <img src="/assets/imgs/for-children.png" alt="for-children" class="size-full object-cover ">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[90px] overflow-hidden">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">İş elanları</h5>
+                                <div class="size-full -translate-y-8">
+                                <img src="/assets/imgs/job-ads.png" alt="job-ads" class="size-full object-cover object-center">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[144px] overflow-hidden">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Heyvanlar</h5>
+                                <div class="size-full -translate-y-5">
+                                <img src="/assets/imgs/animals.png" alt="animals" class="size-full object-cover ">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[180px] overflow-hidden flex">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Mağazalar</h5>
+                                <div class="size-full">
+                                <img src="/assets/imgs/shops.png" alt="shops" class="size-full object-cover ">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[144px] overflow-hidden flex">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Səyahət</h5>
+                                <div class="size-full">
+                                <img src="/assets/imgs/travel.png" alt="travel" class="size-full object-cover object-top">                                
+                                </div>
+                            </div>                            
+                        </a>
+                        <a href="#">
+                        <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[164px] overflow-hidden flex">
+                            <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Gözəllik və
+                                sağlamlıq</h5>
+                            <div class="size-full">
+                            <img src="/assets/imgs/cosmetics.png" alt="cosmetics" class="size-full object-cover object-right">                                
+                            </div>
+                        </div>                            
+                        </a>
+                        <a href="#">
+                            <div class="pt-3 pl-4 rounded-xl bg-[#F1F3FA] h-28 w-[144px] overflow-hidden">
+                                <h5 class="font-semibold text-[15px] leading-5 tracking-[-0.03rem] mb-4">Hobbi və
+                                    asüdə</h5>
+                                <div class="size-full -translate-y-7">
+                                <img src="/assets/imgs/hobbies.png" alt="hobbies" class="size-full object-cover object-right">                                
+                                </div>
+                            </div>                            
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+        <!-- Special Ads. -->
+            <section>
+                <div class="max-w-custom-container mx-auto py-14 relative">
+                    <div>
+                        <h2 class="font-bold text-[32px] leading-10 tracking-[-0.03rem] text-[#121926] mb-10">Xüsusi elanlar</h2>
+                        <!-- Stories -->
+                        <div class="flex gap-5">
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white">
+                                            <img src="/assets/imgs/torpaq-elan.png" alt="hovsanda torpaq" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Hövsanda torpaq satılır</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/kia-sorento.png" alt="kia sorento" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem] text-ellipsis overflow-hidden whitespace-nowrap">Kia Sorento 2020, 2.2 motor Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptatum?</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/aminEmlak.png" alt="amin emlak" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Amin Əmlak daşınmaz lorem</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/samsung-galaxy-s24-ultra.png" alt="samsung-galaxy-s24-ultra" class ="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Samsung Galaxy S24 ultra</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/masazirHomes.png" alt="masazir homes" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Masazır Homes</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/deniz-cehizim.png" alt="deniz cehizim" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Dəniz Cehizim</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/cenib-inshaat.png" alt="cenub inshaat" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Cənub İnşaat</h4>
+                                </div>                                
+                            </a>
+                            <a href="#">
+                                <div class="max-w-[124px] text-center group">
+                                    <div class="bg-angular-gradient h-[124px] w-[124px] rounded-full flex items-center justify-center mb-3">
+                                        <div class="w-28 h-28 rounded-full m-[3px] box-content border-[3px] border-white"><img src="/assets/imgs/bagaj.az.png" alt="baqaj.az" class="size-full rounded-full group-hover:opacity-50 transition-all duration-300"></div>
+                                    </div>
+                                    <h4 class="text-[17px] leading-6 font-[500] tracking-[-0.03rem]">Baqaj.az</h4>
+                                </div>                                
+                            </a>
+                        </div>
+                        <!-- Arrow button that shows more stories -->
+                        <div class="w-10 h-10 border-[3px] border-white bg-[#F1F3FA] flex justify-center items-center rounded-full box-content absolute right-0 more-arrow transform translate-x-5">
+                            <img src="/assets/icons/arrow-to-right.svg" alt="arrow to right">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Products sold at a lower price -->
+            <section class="bg-[#F8FAFC]">
+                <div class="max-w-custom-container mx-auto py-16">
+            <!-- Section title and Check all -->
+                <div class="flex justify-between pb-10">
+                    <div class="flex gap-4">
+                        <img src="assets/icons/fire.svg" alt="fire icon">
+                        <h2 class="font-bold text-4xl tracking-[-0.03rem] text-[#121926]">Dəyərindən aşağı satılanlar</h2>
+                    </div>
+                    <a href="#" class="underline text-primary-blue">Hamısına bax</a>
+                </div>
+            <!-- Products -->
+                <div class="flex gap-6 flex-wrap">
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-warning w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/samsung-galaxy-s24-ultra.png" alt="samsung-galaxy-s24-ultra" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-success w-[264px] group relative">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/computer.png" alt="computer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <div class="flex justify-between">
+                                    <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>    
+                                    <div class="bg-success flex justify-center items-center rounded-full w-6 h-6">
+                                        <img src="assets/icons/barter.svg" alt="barter">
+                                    </div>                                
+                                </div>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                            <span class="bg-[#155EEF] py-1 px-2 rounded-md top-3 left-3 text-white absolute">Mağaza</span>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-error w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/dream.png" alt="dream" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-primary-blue w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/computer2.png" alt="computer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/dryer.png" alt="hair dryer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <div class="flex justify-between">
+                                    <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>    
+                                    <div class="flex gap-1">
+                                        <div class="bg-success flex justify-center items-center rounded-full w-6 h-6">
+                                            <img src="assets/icons/barter.svg" alt="barter">
+                                        </div>  
+                                        <div class="bg-primary-blue flex justify-center items-center rounded-full w-6 h-6">
+                                            <img src="assets/icons/kredit.svg" alt="kredit">
+                                        </div>                                      
+                                    </div>                        
+                                </div>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/classroom.png" alt="classroom" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/area.png" alt="area" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <div class="flex justify-between">
+                                    <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>    
+                                    <div class="flex gap-1">
+                                        <div class="bg-primary-blue flex justify-center items-center rounded-full w-6 h-6">
+                                            <img src="assets/icons/kredit.svg" alt="kredit">
+                                        </div>                                      
+                                    </div>                        
+                                </div>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group relative">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/entertainment.png" alt="entertainment center" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                            <span class="bg-[#155EEF] py-1 px-2 rounded-md top-3 left-3 text-white absolute">Mağaza</span>
+                        </div>                        
+                    </a>
+                </div>                    
+                </div>
+            </section>
+        <!-- Premium ads -->
+            <section>
+                <div class="max-w-custom-container mx-auto py-16">
+            <!-- Section title and Check all -->
+                <div class="flex justify-between pb-10">
+                    <div class="flex gap-4">
+                        <img src="assets/icons/lightning.svg" alt="lightning icon">
+                        <h2 class="font-bold text-4xl tracking-[-0.03rem] text-[#121926]">Premium elanlar</h2>
+                    </div>
+                    <a href="#" class="underline text-primary-blue">Hamısına bax</a>
+                </div>
+            <!-- Products -->
+                <div class="flex gap-6 flex-wrap">
+                    <a href="#">
+                        <div class="rounded-[20px] border border-[#E3E8EF] w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/samsung-galaxy-s24-ultra.png" alt="samsung-galaxy-s24-ultra" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border border-[#E3E8EF] w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/computer.png" alt="computer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border border-[#E3E8EF] w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/dream.png" alt="dream" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border border-[#E3E8EF] w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/computer2.png" alt="computer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/dryer.png" alt="hair dryer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/classroom.png" alt="classroom" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/area.png" alt="area" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/entertainment.png" alt="entertainment center" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                </div>                    
+                </div>
+            </section>
+        <!-- Last Ads -->
+            <section class="bg-[#F8FAFC]">
+                <div class="max-w-custom-container mx-auto py-16">
+            <!-- Section title and Check all -->
+                <div class="flex justify-between pb-10">
+                    <div class="flex gap-4">
+                        <img src="assets/icons/clock.svg" alt="clock icon">
+                        <h2 class="font-bold text-4xl tracking-[-0.03rem] text-[#121926]">Son elanlar</h2>
+                    </div>
+                    <a href="#" class="underline text-primary-blue">Hamısına bax</a>
+                </div>
+            <!-- Products -->
+                <div class="flex gap-6 flex-wrap">
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-warning w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/samsung-galaxy-s24-ultra.png" alt="samsung-galaxy-s24-ultra" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-success w-[264px] group relative">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/computer.png" alt="computer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <div class="flex justify-between">
+                                    <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>    
+                                    <div class="bg-success flex justify-center items-center rounded-full w-6 h-6">
+                                        <img src="assets/icons/barter.svg" alt="barter">
+                                    </div>                                
+                                </div>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                            <span class="bg-[#155EEF] py-1 px-2 rounded-md top-3 left-3 text-white absolute">Mağaza</span>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-error w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/dream.png" alt="dream" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] border-2 border-primary-blue w-[264px] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/computer2.png" alt="computer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/dryer.png" alt="hair dryer" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <div class="flex justify-between">
+                                    <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>    
+                                    <div class="flex gap-1">
+                                        <div class="bg-success flex justify-center items-center rounded-full w-6 h-6">
+                                            <img src="assets/icons/barter.svg" alt="barter">
+                                        </div>  
+                                        <div class="bg-primary-blue flex justify-center items-center rounded-full w-6 h-6">
+                                            <img src="assets/icons/kredit.svg" alt="kredit">
+                                        </div>                                      
+                                    </div>                        
+                                </div>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/classroom.png" alt="classroom" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/area.png" alt="area" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <div class="flex justify-between">
+                                    <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>    
+                                    <div class="flex gap-1">
+                                        <div class="bg-primary-blue flex justify-center items-center rounded-full w-6 h-6">
+                                            <img src="assets/icons/kredit.svg" alt="kredit">
+                                        </div>                                      
+                                    </div>                        
+                                </div>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#">
+                        <div class="rounded-[20px] w-[264px] border border-[#E3E8EF] group relative">
+                            <div class="overflow-hidden rounded-xl">
+                                <img src="assets/imgs/entertainment.png" alt="entertainment center" class="w-full group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="pt-5 px-4 pb-4">
+                                <span class="inline-block font-extrabold text-xl leading-[26px] tracking-[-0.03rem] mb-3 text-[#121926]">46 500 AZN</span>
+                                <p class="text-[#202939] font-[500] text-[17px] leading-6 tracking-[-0.03rem] overflow-hidden text-ellipsis whitespace-nowrap group-hover:text-primary-blue ease-in-out duration-500 transition-all">Samsung Galaxy S24 Onyx Black 128GB/8GB</p>
+                                <span class="inline-block font-[400] text-[15px] leading-[22px] text-[#697586] tracking-[-0.03rem] my-2">Bakı, 21 sentyabr 2024</span>
+                            </div>
+                            <span class="bg-[#155EEF] py-1 px-2 rounded-md top-3 left-3 text-white absolute">Mağaza</span>
+                        </div>                        
+                    </a>
+                </div>                    
+                </div>
+            </section>
+        <!-- Open Shop -->
+            <section class="pt-16 pb-12">
+                <div class="max-w-custom-container mx-auto bg-open-shop grid grid-cols-2 py-10 px-16 rounded-3xl bg-no-repeat bg-contain relative">
+                    <div class="pt-[10px] pb-[14px] px-6 col-span-1 flex flex-col gap-6">
+                        <div class="text-[#202939] font-bold text-[32px] leading-10 rounded-2xl bg-white pt-[10px] pb-[14px] px-6 w-fit">
+                            Mağaza aç
+                        </div>
+                        <div class="open-shop-desc mt-6 rounded-2xl border border-border-white flex-1 p-4">
+                            <h5 class="font-semibold text-[18px] leading-[26px] tracking-[-0.03rem] text-white mb-3">Mağaza açmanın üstünlükləri</h5>
+                            <table class="border-separate text-[#FFFFFFA3] font-[500] leading-5 text-[14px] tracking-[-0.03rem]">
+                                <tr>
+                                    <td>Elanların əsas səhifə və axtarışlarda daha önə çıxsın</td>
+                                    <td class="pl-3"><img src="assets/icons/tick.svg" alt="tick"></td>
+                                </tr>
+                                <tr>
+                                    <td>Daha çox sayda elan yerləşdir</td>
+                                    <td class="pl-3"><img src="assets/icons/tick.svg" alt="tick"></td>
+                                </tr>
+                                <tr>
+                                    <td>Profilinə banner, logo, sosial və veb sayt linkləri əlavə etmə</td>
+                                    <td class="pl-3"><img src="assets/icons/tick.svg" alt="tick"></td>
+                                </tr>
+                                <tr>
+                                    <td>Daha çox alıcıya göstərilmə</td>
+                                    <td class="pl-3"><img src="assets/icons/tick.svg" alt="tick"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="w-fit mt-6">
+                            <a href="#" class="bg-[#1570EF] py-4 px-6 rounded-xl text-white">Mağaza aç</a>
+                        </div>
+                    </div>
+                    <div class="absolute left-[424px] top-[117px] z-10"><img src="assets/icons/shops-mini.svg" alt="shop banner"></div>  
+                    <div class="absolute left-[558px] top-[187px] z-10"><img src="assets/icons/sofa.svg" alt="shop banner"></div>    
+                    <div class="absolute left-[595px] top-[88px] z-10"><img src="assets/icons/vacuum-cleaner.svg" alt="vacuum-cleaner"></div>       
+                    <div class="absolute left-[676px] top-[306px] z-10"><img src="assets/icons/tv.svg" alt="shop banner"></div>    
+                    <div class="absolute right-[45px] top-[260px] z-10"><img src="assets/icons/phone-ring-vibration.svg" alt="shop banner"></div>     
+                    <div class="absolute left-[1005px] top-[44px] z-10"><img src="assets/icons/camera.svg" alt="shop banner"></div>            
+                </div>
+            </section>
+        <!-- Popular searches -->
+            <section class="py-16">
+                <div class="max-w-custom-container mx-auto">
+                    <!-- title -->
+                     <div class="mb-10 flex gap-4">
+                        <div><img src="assets/icons/search-icon.svg" alt="search icon"></div>
+                        <h2 class="font-bold text-4xl tracking-[-0.03rem] text-[#121926]">Populyar axtarışlar</h2>
+                     </div>
+                     <div class="flex flex-wrap gap-3" >
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                yüngül lehimli disklər
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                ABS
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lyuk
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                yağış sensoru
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                mərkəzi qapanma
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                planşetlər
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                maqnitola
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                ps3 oyunları
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                apple notebook
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                telefon
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lg notebook
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                fotoaparatların satisi
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                proqramlar
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                daşınmaz əmlak
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                torpaq satılır
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                playstation 3 satılır
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                chevrolet
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lorem ipsum
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                yüngül lehimli disklər
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                ABS
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lyuk
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                yağış sensoru
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                mərkəzi qapanma
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                planşetlər
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                maqnitola
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                ps3 oyunları
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                apple notebook
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                telefon
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lg notebook
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                fotoaparatların satisi
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                proqramlar
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                daşınmaz əmlak
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                torpaq satılır
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                playstation 3 satılır
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                chevrolet
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lorem ipsum
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                yüngül lehimli disklər
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                ABS
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                lyuk
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                yağış sensoru
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                mərkəzi qapanma
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                planşetlər
+                            </div>                        
+                        </a>
+                        <a href="#">
+                            <div class="bg-[#F1F3FA] text-[15px] leading-[22px] font-normal tracking-[-0.03rem] text-[#202939] py-2 px-4 rounded-md hover:bg-[#d1d7ee] duration-300">
+                                maqnitola
+                            </div>                        
+                        </a>
+                     </div>
+                </div>
+            </section>
+        </main>
+        <footer class=" bg-[#F1F3FA] pt-16">
+            <div class="max-w-custom-container mx-auto">
+                <!-- Contacts and Footer links -->
+                <div class="border-b border-[#202939] border-opacity-10 pb-16 flex justify-between items-center">
+                    <!-- Logo and social media links -->
+                    <div>
+                        <!-- Main Logo -->
+                         <a href="#">
+                            <div class="mb-6">
+                                <img src="assets/icons/main-logo.svg" alt="bart.az logo">
+                            </div>                            
+                         </a>
+                        <!-- Social Media Links -->
+                         <div class="flex gap-5">
+                            <a href="#">
+                                <div class="flex justify-center items-center w-10 h-10 border border-[#697586] rounded-full"><img src="/assets/icons/facebook.svg" alt="facebook icon"></div>                                
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center w-10 h-10 border border-[#697586] rounded-full"><img src="/assets/icons/instagram.svg" alt="instagram icon"></div>                                
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center w-10 h-10 border border-[#697586] rounded-full"><img src="/assets/icons/youtube.svg" alt="youtube icon"></div>                                
+                            </a>
+                            <a href="#">
+                                <div class="flex justify-center items-center w-10 h-10 border border-[#697586] rounded-full"><img src="/assets/icons/tik-tok.svg" alt="tik-tok icon"></div>                                
+                            </a>
+                         </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="text-base leading-6 tracking-[-0.03rem] font-[500] text-[#202939] flex gap-28">
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="#">Barter</a></li>
+                            <li><a href="#">Satılır</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="#">İcarə</a></li>
+                            <li><a href="#">Ehtiyacı olanlar üçün</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="#">Mağaza aç</a></li>
+                            <li><a href="#">Haqqımızda</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="#">Qaydalar</a></li>
+                            <li><a href="#">Əlaqə</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copyright and contact infos -->
+                <div class="pt-4 pb-6 text-xs leading-[18px] tracking-[-0.03rem] font-normal text-[#697586] flex justify-between">
+                    <!-- Copyright -->
+                    <div class="w-[400px]">
+                        Saytda yerləşdirilmiş bannerlər və elanların məzmununa görə saytın rəhbərliyi məsuliyyət daşımır!Copyright 2015-2024 Bart.az.
+                    </div>
+                    <!-- Contact infos -->
+                    <div>
+                        <a href="mailto:info@bart.az" class="block">info@bart.az</a>
+                        <a href="tel:(070) 274 15 10" class="block">(070) 274 15 10</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
