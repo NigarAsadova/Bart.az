@@ -14,3 +14,8 @@ body{
     background: rgb(21,94,239);
     background: linear-gradient(90deg, rgba(21,94,239,1) 0%, rgba(21,94,239,0.23043746307116597) 45%);
 }
+
+.test{
+    background-image: url('../assets/imgs/services.png');
+    object-fit: cover;
+}

@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: {
         'angular-gradient': 'linear-gradient(225deg, rgba(223,0,173,1) 0%, rgba(224,2,169,1) 32%, rgba(255,156,0,1) 66%, rgba(255,165,0,1) 91%)',
         'open-shop' : "url('/assets/imgs/open shop.png')",
+        'test': "url('/assets/imgs/services.png')"
       },
     },
   },
